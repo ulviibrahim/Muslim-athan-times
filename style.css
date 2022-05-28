@@ -1,0 +1,24 @@
+#times-table{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+#times-table.active{
+    opacity: 1;
+    visibility: visible;
+}
+.preloader{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.preloader img{
+    width: 400px;
+}
+.preloader.active{
+    display: flex;
+}

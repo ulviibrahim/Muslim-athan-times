@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="row my-5">
+        <div class="col-12">
+
+            <form id="adhan" class="form-inline mb-3">
+
+
+                <label class="sr-only" for="year">Year</label>
+               
+                  <input type="number" min="2000" max="2022" class="form-control" id="year" placeholder="Year">
+                
+              
+
+                <label class="ml-4" for="month">Select month</label>
+              <select name="month" class="form-control ml-2 " id="month">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+              </select>
+
+                <input class="form-check-input ml-3" type="checkbox" id="annual">
+                <label class="form-check-label" for="annual">
+                  Annual
+                </label>
+              <input type="submit" class="btn btn-outline-success btn-block btnLoadTimes my-3" value=" Load Adhan times for Baku">
+              </form>
+
+           
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col preloader">
+            <img src="img/preloader.gif" alt="">
+            <!-- <p class="lead">Loading...</p> -->
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-2">
+        <table id="times-table" class="table table-bordered table-hovered">
+            <thead>
+               <tr>
+                   <th>Date</th>
+                   <th>Fajr</th>
+                   <th>Sunrise</th>
+                   <th>Dhuhr</th>
+                   <th>Asr</th>
+                   <th>Sunset</th>
+                   <th>Maghrib</th>
+                   <th>Isha</th>
+                   <th>Imsak</th>
+
+                   <th>Midnight</th>
+
+               </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
